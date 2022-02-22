@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="exercise_7_6" 
+        type="ardron_action_client.py" 
+        name="ardron_action_client"  
+        output="screen">
+  </node>
+</launch>

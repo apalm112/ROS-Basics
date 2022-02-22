@@ -1,0 +1,8 @@
+<launch>
+  <node 
+    pkg="exercise_8_13" 
+    type="my_action_client.py" 
+    name="my_action_client"  
+    output="screen">
+  </node>
+</launch>

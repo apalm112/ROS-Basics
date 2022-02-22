@@ -1,0 +1,11 @@
+<launch>
+  <node pkg="services_quiz"
+        type="bb8_move_custom_service_server.py" 
+        name="move_bb8_in_square_custom"   
+        output="screen">
+  </node>
+</launch>
+
+<!-- **This should only start the service server, and not the service client.**
+
+The name of the service will be **/move_bb8_in_square_custom**. -->

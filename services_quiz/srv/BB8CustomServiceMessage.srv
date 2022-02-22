@@ -1,0 +1,4 @@
+float64 side   # the bigger the side variable the bigger the square
+int32 repetitions
+---
+bool success

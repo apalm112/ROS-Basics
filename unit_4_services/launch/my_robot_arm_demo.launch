@@ -1,0 +1,33 @@
+<launch>
+
+    <include file="$(find iri_wam_reproduce_trajectory)/launch/start_service.launch" />
+
+  <node pkg="unit_4_services"
+        type="exercise_4_1.py" 
+        name="unit_4_services"   
+        output="screen">
+  </node>
+</launch>
+
+<!-- name="exercise_4_1"    -->
+<!-- starts the /execute_trajectory service. As explained in the Example 4.3, this service is launched by the launch file start_service.launch, which is in the package iri_wam_reproduce_trajectory. -->
+
+<!-- Make the robotic arm move following a trajectory, which is specified in a file.
+Modify the previous code of Example 4.5, which called the /trajectory_by_name service, to call now the /execute_trajectory service instead. The new Python file could be called exercise_4_1.py, for future reference. -->
+
+<!-- PACKAGE_NAME:  unit_4_services
+SERVICE:       /execute_trajectory
+    $ roslaunch trajectory_by_name start_service.launch
+    $ rosservice info /execute_trajectory
+    NODE:       /iri_wam_reproduce_trajectory
+    TYPE:       iri_wam_reproduce_trajectory/ExecTraj
+    ARGS:       file
+USES PKG:      iri_wam_reproduce_trajectory
+SERVICE_MESSAGE:   
+
+$ rosservice info /trajectory_by_name
+Node: /traj_by_name_node
+URI: rosrpc://1_xterm:33203
+Type: trajectory_by_name_srv/TrajByName
+Args: traj_name
+-->

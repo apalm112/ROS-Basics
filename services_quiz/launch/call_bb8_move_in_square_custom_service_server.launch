@@ -1,0 +1,14 @@
+<launch>
+    <!-- <include file="$(find services_quiz)/launch/start_bb8_move_custom_service_server.launch" /> -->
+  <node pkg="services_quiz"
+        type="bb8_move_custom_service_client.py" 
+        name="move_bb8_in_square_custom_client"   
+        output="screen">
+  </node>
+</launch>
+
+<!-- TODO The name of the launch file that will start your Service Client will be call_bb8_move_in_square_custom_service_server.launch.
+ This launch file should not start the Service Server, only the Service Client -->
+
+<!-- The name of the launch file that will start your Service Client will be `call_bb8_move_in_square_custom_service_server.launch`. 
+**This launch file should not start the Service Server, only the Service Client**. -->

@@ -1,0 +1,8 @@
+<launch>
+    <node 
+        pkg="simple_topic_publisher" 
+        type="simple_topic_publisher.py" 
+        name="counter"  
+        output="screen">
+    </node>
+</launch>

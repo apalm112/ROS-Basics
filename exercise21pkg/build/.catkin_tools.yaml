@@ -1,0 +1,6 @@
+devel_space: /home/user/catkin_ws/src/exercise21pkg/devel
+install: false
+install_space: /home/user/catkin_ws/src/exercise21pkg/install
+profile: default
+source_space: /home/user/catkin_ws/src/exercise21pkg/src
+workspace: /home/user/catkin_ws/src/exercise21pkg
